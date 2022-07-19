@@ -10,14 +10,14 @@ header {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-   
+
 
 }
 
 .banner-section {
     display: flex;
     justify-content: space-evenly;
-     align-items: center; 
+    align-items: center;
     border-radius: 20px;
     width: 80%;
     height: 80vh;
@@ -52,6 +52,82 @@ button {
 } */
 /* header styles end */
 
+
+/* middle section style */
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.middle-section {
+    display: flex;
+    width: 80%;
+
+}
+
+.side-menu {
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px 30px;
+    height: 200px;
+    width: 20%;
+}
+
+.inactive-button {
+
+    background-color: azure;
+    color: black;
+    margin-bottom: 20px;
+
+}
+.blogs{
+    
+    margin-left: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    grid-gap: 20px;
+}
+.blog{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.blog img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-texts{
+    margin: 10px 20px;
+}
+.transfer-button{
+    background: none;
+    border: 1px solid black;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+.card-bottom-text{
+    display: flex;
+    align-items: center;
+    
+}
+.card-bottom-text div{
+    margin-right: 20px;
+}
+.card-bottom-text div i{
+    color: grey;
+}
+
+.view-all{
+    display: none;
+}
+
 /* for mobile */
 @media only screen and (max-width: 576px) {
 
@@ -61,32 +137,132 @@ button {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
+
     .banner-section div {
         width: 90%;
     }
-    .header-texts{
+
+    .header-texts {
         text-align: center;
     }
+
     .header-texts h1 {
-       
+
         font-size: 1.5em;
     }
+
     .header-texts p {
         white-space: nowrap;
         font-size: 0.7em;
         overflow: hidden;
         text-overflow: ellipsis;
-        
-    }
-    .header-img{
-        margin-top: 30px;
-        
-    }
-    .header-img img {
-        width: 80%;
-        
+
     }
 
+    .header-img {
+        margin-top: 30px;
+
+    }
+
+    .header-img img {
+        width: 80%;
+
+    }
+
+    /* middle section style */
+/* middle section style */
+main{
+    margin-top: 50px;
+}
+.middle-section {
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+.side-menu {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100px; */
+    width: 90%;
+}
+.side-menu button{
+    font-size: 1.2em;
+    height: 70px;
+    width: 80%;
+}
+.inactive-button{
+    background: none;
+    border: 1px solid grey;
+}
+.blogs{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 0; 
+    /* border: 1px solid red; */
+    grid-row-gap: 20px;
+}
+.not-in-tabmobile{
+    display: none;
+}
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width:992px) {
+
+    /* header style */
+    .banner-section {
+        height: 50vh;
+        width: 90%;
+    }
+    /* middle section style */
+    .middle-section {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    
+    }
+    .side-menu {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100px;
+        width: 90%;
+    }
+    .side-menu button{
+        font-size: 1.2em;
+        height: 70px;
+        width: 30%;
+    }
+    .inactive-button{
+        background: none;
+        border: 1px solid grey;
+    }
+    .blogs{
+    
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        grid-gap: 20px;
+    }
+    .not-in-tabmobile{
+        display: none;
+    }
+    .view-all{
+        display: block;
+        margin-top:50px ;
+    display: flex;
+    justify-content: center;
+    }
 }
