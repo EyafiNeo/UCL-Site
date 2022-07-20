@@ -97,6 +97,7 @@ header {
 button {
     color: azure;
     border-radius: 5px;
+    border: none;
     font-size: 18px;
     background-color: #EE4E34;
     padding: 15px 15px;
@@ -105,8 +106,6 @@ button {
 button:hover{
     background-color: rgb(255, 164, 164);
     color: black;
-    
-
 }
 button:hover>a{
     color: black;
@@ -337,8 +336,9 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 1px solid red;
         /* height: 100px; */
-        width: 90%;
+        width: 80%;
     }
 
     .side-menu button {
@@ -369,6 +369,7 @@ hr {
     /* Footer styles */
     footer {
         height: 70vh;
+        width: 100vw;
     }
 
     .footer-bottom-texts {
@@ -404,6 +405,7 @@ hr {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: baseline;
         height: 100px;
         width: 90%;
     }
@@ -442,6 +444,7 @@ hr {
     /* footer style */
     footer {
         height: 40vh;
+        width: 100vw;
     }
 
     .icons {
